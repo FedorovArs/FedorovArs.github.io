@@ -1,18 +1,18 @@
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 } 
 
-/* .body-container {
-    max-width: 1800px;
-    margin: 0 auto;
-    border: 1px solid black;
-    box-shadow: 0 0 5px;
-} */
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body-container {
+    min-width: 400px;
+}
 
 header {    
    display: grid;
-   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-columns: 1.5fr 3fr 1.5fr;
    height: 90px;
 }
 
@@ -56,9 +56,10 @@ header a:hover {
 }
 
 #logo {
-    background-image: url(./../../course_work_1/img/logo/logo-2_cut.png);
+    background-image: url(../img/logo/logo.png);
     background-size: contain;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;  
+    background-position: center;
 }
 
 .lang {
@@ -70,31 +71,124 @@ header a:hover {
 
 main {    
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 2fr 3fr;
+   grid-template-rows: auto;
 }
 
 .main-video{
-    width: 90%;
+    min-width: 600px;
+    width: 100%;
     position: relative;
     animation-play-state: running;
 }
 
 .main-text{
-    margin-left: 20%;
-    margin-top: 10%;
-    margin-right: 5%;
+    margin-top: 30%;
+    transform: translateY(-10%);
+    transition: transform 1s linear;
 }
 
 .main-text-h1{
-    font-size: 51px;
+    font-size: 3em;
     color: #2782ff;
     margin: 0;
     text-align: left;
-    line-height: 1.05;
-    line-height: 64px;
+    line-height: 1.33;
 }
 
 .main-text-p {
     font-size: 16px;
     line-height: 32px;
 }
+
+.button{
+    border: 2px solid #2782ff;
+    padding: 18px 32px;
+    margin-top: 15%;
+    font-size: 16px;
+}
+
+.buttons_wraper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+}
+
+.button_type_of_activity {
+    background-color:  #2782ff;
+}
+
+.button_type_of_activity:hover {
+    background-color:  white;
+        transition: all .3s linear;
+}
+
+.button_type_of_activity:hover .button_a_type_of_activity {
+    color:  #2782ff;
+}
+
+.button_a_type_of_activity {
+    color: white;
+    text-decoration: none;
+}
+
+.button_our_ability {
+    background-color:  white;
+}
+
+.button_our_ability:hover {
+    background-color:  #2782ff;
+    transition: all .3s linear;
+}
+
+.button_our_ability:hover .button_a_our_ability{
+    color: white;
+} 
+
+.button_a_our_ability {
+    color: #2782ff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .header-contacts {
+        display: none;
+    }
+
+    .main-text {
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .header-container {
+    grid-template-columns: 1fr 2fr;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+
+    .header-contacts {
+        display: none;
+    }
+
+    .main-video{
+        display: none;
+    }
+
+    .header-container {
+    grid-template-columns: 1fr 2fr;
+    }    
+}
+
+@media screen and (max-width: 500px) {
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-container {
+    grid-template-columns: 1fr;
+    }    
+}
+
