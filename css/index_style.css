@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+} 
+
+/* .body-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 0 0 5px;
+} */
+
+header {    
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   height: 90px;
+}
+
+.header-menu {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 14px;
+}
+
+.header-menu li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.header-contacts {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    font-size: 14px;
+}
+
+.header-contacts li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+header a {
+    color: #383838;
+    text-decoration-line: none;
+}
+
+header a:hover {
+    color: #2782ff;
+}
+
+#logo {
+    background-image: url(./../../course_work_1/img/logo/logo-2_cut.png);
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
+.lang {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+main {    
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.main-video{
+    width: 90%;
+    position: relative;
+    animation-play-state: running;
+}
+
+.main-text{
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.main-text-h1{
+    font-size: 51px;
+    color: #2782ff;
+    margin: 0;
+    text-align: left;
+    line-height: 1.05;
+    line-height: 64px;
+}
+
+.main-text-p {
+    font-size: 16px;
+    line-height: 32px;
+}
