@@ -22,7 +22,7 @@ header {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .header-menu li {
@@ -37,7 +37,7 @@ header {
     list-style-type: none;
     display: grid;
     grid-template-columns: 3fr 1fr 2fr;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .header-contacts li {
@@ -97,15 +97,15 @@ main {
 }
 
 .main-text-p {
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 1em;
+    line-height: 2em;
 }
 
 .button{
     border: 2px solid #2782ff;
     padding: 18px 32px;
     margin-top: 15%;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .buttons_wraper{
@@ -195,4 +195,3 @@ main {
     grid-template-columns: 1fr;
     }    
 }
-
