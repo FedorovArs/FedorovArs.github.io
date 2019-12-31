@@ -1,60 +1,109 @@
 <html>
 
 <head>
-  <title>Гидро М</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/index_style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/logo/star.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Гидро М</title>
+    <meta charset="UTF-8">
+    <!--    <link href="css/index_style.css" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./img/logo/star.png" rel="shortcut icon" type="image/x-icon">
 </head>
-
 <body>
-  <div class="body-container">
-    <header class="header-container">
-      <a id="logo" href="http://hydrom.ru/" target="_blank"></a>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="http://hydrom.ru/">Гидро М</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <ul class="header-menu">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Категории</a></li>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#">Войти</a></li>
-      </ul>
-
-      <ul class="header-contacts">
-        <li>+7 911 773 4582</li>
-        <li class="lang">EN</li>
-        <li class="header-contact-us">Связаться</li>
-      </ul>
-    </header>
-
-    <main class="main-container">
-      <div class="empty_div"></div>
-      <div class="main-text">
-        <h1 class="main-text-h1">Команда экспертов по ремонту высокоточного оборудования</h1>
-        <br>
-        <p class="main-text-p">В основной состав компании вошли специалисты имеющие за плечами огромный опыт выполнения
-          работ по ремонту
-          высокоточного
-          оборудования, прошедшие обучение у ведущих специалистов мировых производителей металлообрабатывающих станков,
-          таких как
-          Škoda Machine Tool, TOS-Kurim, TOS-Varnsdorf, ČKD-Blansko, StarragHeckert AG, Mecof и др.</p>
-
-        <div class="buttons">
-          <div class="buttons_wraper">
-            <button class="button button_type_of_activity">
-              <a class="button_a_type_of_activity" href="#">Виды деятельности</a></button>
-            <button class="button button_our_ability">
-              <a class="button_a_our_ability" href="#">Наши возможности</a>
-            </button>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="mx-auto  navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Возможности </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Станки </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Портфолио
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Электроника</a>
+                        <a class="dropdown-item" href="#">Механика</a>
+                        <a class="dropdown-item" href="#">Гидравлика</a>
+                    </div>
+                </li>
+            </ul>
+            <span class="navbar-text text-right" style="color: white;">
+                    +7 911 773 45 82
+                </span>
         </div>
-      </div>
-      <div class="main-video">
-        <video loop autoplay muted width="100%" height="auto" src="./video/main-screen-animation.mp4"></video>
-      </div>
-    </main>
+    </nav>
+</div>
 
-  </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<!--  <div class="body-container">-->
+<!--    <header class="header-container">-->
+<!--      <a id="logo" href="http://hydrom.ru/" target="_blank"></a>-->
+
+<!--      <ul class="header-menu">-->
+<!--        <li><a href="#">Главная</a></li>-->
+<!--        <li><a href="#">Категории</a></li>-->
+<!--        <li><a href="#">Статьи</a></li>-->
+<!--        <li><a href="#">Войти</a></li>-->
+<!--      </ul>-->
+
+<!--      <ul class="header-contacts">-->
+<!--        <li>+7 911 773 4582</li>-->
+<!--        <li class="lang">EN</li>-->
+<!--        <li class="header-contact-us">Связаться</li>-->
+<!--      </ul>-->
+<!--    </header>-->
+
+<!--    <main class="main-container">-->
+<!--      <div class="empty_div"></div>-->
+<!--      <div class="main-text">-->
+<!--        <h1 class="main-text-h1">Команда экспертов по ремонту высокоточного оборудования</h1>-->
+<!--        <br>-->
+<!--        <p class="main-text-p">В основной состав компании вошли специалисты имеющие за плечами огромный опыт выполнения-->
+<!--          работ по ремонту-->
+<!--          высокоточного-->
+<!--          оборудования, прошедшие обучение у ведущих специалистов мировых производителей металлообрабатывающих станков,-->
+<!--          таких как-->
+<!--          Škoda Machine Tool, TOS-Kurim, TOS-Varnsdorf, ČKD-Blansko, StarragHeckert AG, Mecof и др.</p>-->
+
+<!--        <div class="buttons">-->
+<!--          <div class="buttons_wraper">-->
+<!--            <button class="button button_type_of_activity">-->
+<!--              <a class="button_a_type_of_activity" href="#">Виды деятельности</a></button>-->
+<!--            <button class="button button_our_ability">-->
+<!--              <a class="button_a_our_ability" href="#">Наши возможности</a>-->
+<!--            </button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="main-video">-->
+<!--        <video loop autoplay muted width="100%" height="auto" src="./video/main-screen-animation.mp4"></video>-->
+<!--      </div>-->
+<!--    </main>-->
+
+<!--  </div>-->
 </body>
 
 </html>
